@@ -3,7 +3,7 @@
 /* Fonte personalizada chamada "android" */
 @font-face {
     font-family: "android"; /* Nome da fonte usada no CSS */
-    src: url("fontes/idroid.otf") format("opentype"); /* Caminho do arquivo e formato */
+    src: url("../fontes/idroid.otf") format("opentype"); /* Caminho do arquivo e formato */
     font-weight: normal; /* Peso padrão da fonte */
     font-style: normal; /* Estilo padrão da fonte */
 }
@@ -11,7 +11,7 @@
 /* Fonte personalizada chamada "BebasNeue-Regular" */
 @font-face {
     font-family: "BebasNeue-Regular"; /* Nome da fonte */
-    src: url("fontes/BebasNeue-Regular.ttf") format("truetype"); /* Caminho e formato */
+    src: url("../fontes/BebasNeue-Regular.ttf") format("truetype"); /* Caminho e formato */
     font-weight: normal; /* Peso padrão */
     font-style: normal; /* Estilo padrão */
 }
