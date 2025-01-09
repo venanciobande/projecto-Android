@@ -1,0 +1,96 @@
+/* Configurações do código base do css em style.css */
+
+/* Estilo para o título h2 */
+h2 {
+    background-image: linear-gradient(to top, #1A5C38, #3CD983); /* Gradiente verde */
+    box-shadow: 0px 5px 5px #0000004d; /* Sombra */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466); /* Sombra do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o formulário */
+form {
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Organiza os itens do formulário em coluna */
+}
+
+/* Estilo para os rótulos (labels) */
+label {
+    margin-bottom: 5px; /* Espaço abaixo dos rótulos */
+    font-weight: bold; /* Rótulos em negrito */
+    color: #265768; /* Cor azul-esverdeado */
+}
+
+/* Estilo para campos de entrada (input) e área de texto (textarea) */
+input, textarea {
+    background-image: linear-gradient(to right, #c5ebd6, white); /* Gradiente horizontal */
+    margin-bottom: 15px; /* Espaço inferior entre os campos */
+    padding: 10px; /* Espaço interno dos campos */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo para o botão */
+button {
+    background-image: linear-gradient(to top, #1A5C38, #3CD983); /* Gradiente de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    margin-bottom: 15px; /* Espaço inferior */
+    padding: 10px; /* Espaço interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Alteração do cursor para indicar que é clicável */
+}
+
+/* Estilo para o botão quando estiver no estado hover */
+button:hover {
+    background-color: #265768; /* Altera a cor de fundo no hover */
+}
+
+/* Estilo para o título h3 dentro da seção de informações de contato */
+.contact-info h3 {
+    margin-top: 0; /* Remove a margem superior */
+    color: #265768; /* Cor azul-esverdeado */
+}
+
+/* Estilo para os parágrafos dentro da seção de informações de contato */
+.contact-info p {
+    margin: 10px 0; /* Margem entre os parágrafos */
+    line-height: 1.6; /* Aumenta a altura da linha */
+}
+
+/* Estilo para o texto em negrito dentro da seção de informações de contato */
+.contact-info strong {
+    color: #2d8385; /* Cor azul mais escuro */
+}
+
+/* Estilo para a seção de botão "voltar" */
+.back-button {
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 20px; /* Espaço superior */
+}
+
+/* Estilo para o link dentro da seção de botão "voltar" */
+.back-button a {
+    text-decoration: none; /* Remove sublinhado do link */
+    background-image: linear-gradient(to top, #1A5C38, #3CD983); /* Fundo gradiente */
+    color: white; /* Cor do texto do link */
+    padding: 10px 20px; /* Espaço interno do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para a mudança de cor de fundo */
+}
+
+/* Estilo para o link no estado hover */
+.back-button a:hover {
+    background-color: #2d8385; /* Cor de fundo mais escura quando o mouse passa sobre o link */
+}
+
+/* Links padrão na navegação */
+nav > a {
+    color: white; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+    margin: 20px; /* Espaçamento entre os links */
+    font-weight: normal; /* Peso padrão */
+}

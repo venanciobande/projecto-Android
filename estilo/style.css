@@ -1,0 +1,204 @@
+@charset "UTF-8"; /* Define a codificação como UTF-8 para suporte a caracteres especiais */
+
+/* Fonte personalizada chamada "android" */
+@font-face {
+    font-family: "android"; /* Nome da fonte usada no CSS */
+    src: url("fontes/idroid.otf") format("opentype"); /* Caminho do arquivo e formato */
+    font-weight: normal; /* Peso padrão da fonte */
+    font-style: normal; /* Estilo padrão da fonte */
+}
+
+/* Fonte personalizada chamada "BebasNeue-Regular" */
+@font-face {
+    font-family: "BebasNeue-Regular"; /* Nome da fonte */
+    src: url("fontes/BebasNeue-Regular.ttf") format("truetype"); /* Caminho e formato */
+    font-weight: normal; /* Peso padrão */
+    font-style: normal; /* Estilo padrão */
+}
+
+/* Declaração de variáveis globais para fontes */
+:root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif; /* Fonte padrão */
+    --fonte-destaque: "BebasNeue-Regular", cursive; /* Fonte para destaque */
+    --fonte-android: "android", cursive; /* Fonte personalizada */
+}
+
+/* Estilização do corpo da página */
+body {
+    font-family: var(--fonte-padrao); /* Usa a fonte padrão */
+    background: linear-gradient(to right, #B9D5C7, #ECECE2, #C3AC8A); /* Fundo com degradê horizontal */
+    margin: 0px; /* Remove margens */
+    padding: 0px; /* Remove espaçamentos */
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-image: linear-gradient(to top, #1A5C38, #3CD983); /* Fundo com degradê vertical */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0px 5px 5px #0000004d; /* Adiciona sombra na parte inferior */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466); /* Sombra no texto */
+}
+
+/* Título principal no cabeçalho */
+header h1 {
+    font-family: var(--fonte-destaque); /* Usa fonte de destaque */
+    color: white; /* Cor do texto branca */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Parágrafos no cabeçalho */
+header p {
+    color: white; /* Cor branca */
+    text-align: center; /* Centralizado */
+    margin-bottom: 40px; /* Espaçamento inferior */
+    line-height: 2.0em; /* Altura da linha */
+}
+
+/* Barra de navegação */
+nav {
+    text-align: left; /* Alinha à esquerda */
+    gap: 10px; /* Espaço entre itens */
+}
+
+/* Links padrão na navegação */
+nav > a {
+    color: white; /* Cor branca */
+    text-decoration: none; /* Remove sublinhado */
+    margin: 20px; /* Espaçamento */
+    font-weight: normal; /* Peso padrão */
+}
+
+/* Links ao passar o mouse */
+nav > a:hover {
+    font-weight: bolder; /* Aumenta peso */
+    background-color: #84e1ad; /* Fundo verde claro */
+    color: black; /* Texto preto */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Área principal do conteúdo */
+main {
+    background-color: white; /* Fundo branco */
+    color: black; /* Texto preto */
+    max-width: 900px; /* Largura máxima */
+    padding: 20px; /* Espaçamento interno */
+    margin: auto; /* Centralizado */
+    border-radius: 0px 0px 5px 5px; /* Arredonda cantos inferiores */
+    box-shadow: 2px 2px 5px black; /* Adiciona sombra */
+}
+
+/* Títulos <h2> na área principal */
+main h2 {
+    font-family: var(--fonte-android); /* Fonte personalizada */
+    color: #1A5C38; /* Cor verde escura */
+}
+
+/* Títulos <h3> na área principal */
+main h3 {
+    font-family: var(--fonte-android); /* Fonte personalizada */
+    color: #1A5C38; /* Verde escuro */
+    background-image: linear-gradient(to right, #c5ebd6, white); /* Fundo degradê */
+    text-indent: 10px; /* Recuo no início do texto */
+}
+
+/* Parágrafos na área principal */
+main p {
+    margin: 15px 0px; /* Margens superior/inferior */
+    text-align: justify; /* Justifica texto */
+    font-size: 1em; /* Tamanho padrão */
+    line-height: 2em; /* Altura da linha */
+    color: black; /* Preto */
+    text-indent: 30px; /* Recuo no início */
+}
+
+/* Links nos parágrafos */
+p a {
+    text-decoration: none; /* Remove sublinhado */
+    background-color: #31ab68; /* Fundo verde */
+    border-radius: 3px; /* Bordas arredondadas */
+}
+
+/* Links ao passar o mouse */
+p a:hover {
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+/* Ícone após links */
+p a::after {
+    content: "🔗"; /* Ícone adicionado */
+}
+
+/* Imagens em uma section */
+section > picture {
+    display: block; /* Exibição em bloco */
+    width: 100%; /* Largura total */
+    margin: auto; /* Centraliza */
+    text-align: center; /* Centralizado */
+}
+
+/* Estilização de imagens */
+img {
+    max-width: 100%; /* Largura máxima */
+    height: auto; /* Altura automática */
+}
+
+/* Estilo para a área de vídeos */
+.video {
+    background-color: #1a5c38; /* Fundo verde escuro */
+    text-align: center; /* Centralizado */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Título de segunda camada */
+.titulo-2 {
+    background-color: #2fa866; /* Fundo verde médio */
+    color: white; /* Texto branco */
+    padding: 15px; /* Espaçamento interno */
+    margin-top: 20px; /* Margem superior */
+    border-top-right-radius: 10px; /* Arredonda bordas superiores */
+    border-top-left-radius: 10px; /* Arredonda bordas superiores */
+    box-shadow: 2px 2px 5px black; /* Adiciona sombra */
+}
+
+/* Seção extra */
+.extra {
+    background-color: #c5ebd6; /* Fundo verde claro */
+    box-shadow: 2px 2px 5px black; /* Sombra */
+    padding: 15px; /* Espaçamento interno */
+    border-bottom-right-radius: 10px; /* Arredonda bordas inferiores */
+    border-bottom-left-radius: 10px; /* Arredonda bordas inferiores */
+}
+
+/* Listas não ordenadas */
+ul {
+    list-style-type: "\2714\0020\0020"; /* Marcador personalizado (check) */
+    columns: 2; /* Divide em 2 colunas */
+    list-style-position: outside; /* Marcadores fora do texto */
+}
+
+/* Rodapé */
+footer {
+    background-color: #c5ebd6; /* Fundo verde claro */
+    color: black; /* Texto preto */
+    text-align: center; /* Centralizado */
+    margin-top: 20px; /* Margem superior */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Links no rodapé */
+footer a {
+    text-decoration: none; /* Remove sublinhado */
+    background-color: #31ab68; /* Fundo verde */
+    border-radius: 3px; /* Bordas arredondadas */
+}
+
+/* Links ao passar o mouse no rodapé */
+footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+/* Ícone após links do rodapé */
+footer a::after {
+    content: "🔗"; /* Ícone de link */
+}
